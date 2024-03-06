@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do mundo</title>
+
+    <style>
+        @font-face {
+            font-family: 'jujutsu';
+            src: url(fontes/JujutsuKaisen.ttf) format(TrueType);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+
+        }
+        section div.background{
+            height: 100vh;
+            width:  100%;
+            position: absolute;
+            z-index: 0;
+            
+        }
+        section div.background video{
+            height: 100%;
+            width:  100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        section div.box{
+            width: 50%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2%;
+        }
+
+        section div.box div.conteudo{
+            width: 80%;
+        }
+
+        section div.box img{
+            width: 100%;
+            min-width: 300px;
+        }
+
+        section div.box p{
+            color: white;
+            font-size: 44px;
+            line-height: 42px;
+            font-family: 'jujutsu', 'Arial Narrow', Arial, sans-serif;
+            font-weight: normal;
+        }
+
+        @media screen and (max-width: 1400px){
+            section div.box{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(to right, rgba(0,0,0,0.2));
+            padding: 2%;
+            text-align: center;
+            }
+
+            section div.box div.conteudo{
+            width: 90%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+    <div class="background">
+        <video
+        src="vídeos/video 01.mp4" 
+        autoplay muted loop></video>
+    </div>
+
+    <div class="box">
+        <div class="conteudo">
+            <img src="images/jujutsuLogo/logo_720.png" alt="jujutsu kaisen logotype">
+            <p>A Jujutsu Kuroyami é um lugar onde a tradição do jujutsu se encontra com a luta pela sobrevivência. O destino do mundo repousa sobre os ombros dos praticantes de jujutsu, enquanto enfrentam a Escuridão que se aproxima. Seu treinamento, técnicas ancestrais e habilidades únicas são a última esperança contra o avanço das trevas. Prepare-se para entrar nesse mundo sombrio e descobrir o que está por trás da cortina de mistério que envolve a Jujutsu Kuroyami.</p>
+        </div>
+
+    </div>
+    </section>
+</body>
+</html>

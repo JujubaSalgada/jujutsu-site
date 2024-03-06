@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'jujutsu';
+    src: url(fontes/JujutsuKaisen.ttf) format(TrueType);
+}
+
+body{
+    background-color: rgb(35, 35, 253);
+    background-image: url(images/background_image/backgroundGif01.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    background-color: black;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20%;
+    border-radius: 20px;
+
+    font-size: 45px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+
+p{
+    font-family: 'jujutsu', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+#jujutsuLogo{
+    text-align: center;
+}
+
+#texto_de_apresentação_geral{
+    text-align: center;
+    color: white;
+}
